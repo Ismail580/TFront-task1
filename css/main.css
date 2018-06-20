@@ -1,113 +1,136 @@
-/*===== General Rules =====*/
-*{
-    outline: none;
-    box-sizing: border-box;
-}
 body{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: arial
 }
-/*===== Our-Community Section =====*/
-.community{
-    padding-top: 96px;
-    padding-bottom: 122px;
-    background-color: #f5f6f7;
+
+.container{
+    width: 1170px;
+    margin: auto
 }
-.community .container{
-    width: 1152px;
-    margin: 0 auto;
-    padding: 0 64px;
-    overflow: hidden;
+
+.button{
+    background-color: #14A085;
+    border: solid 1px #14A085;
+    border-radius: 5px;
+    padding: 15px 40px
 }
-.community .slide{
-    display: none;
-}
-.community .controls{
-    font-size: 24px;
-    line-height: 24px;
-    text-align: right;
-    margin-bottom: 5px;
-}
-.community .controls i{
-    cursor: pointer;
-    margin-left: 20px;
-}
-.community .left-col,
-.community .right-col{
-    float: left;
-}
-.community .left-col{
-    width: 25%;
-    padding-top: 70px;
-    text-align: center;
-    padding-right: 64px;
-}
-.community .left-col h2{
-    text-align: left;
-}
-.community .left-col p{
-    padding: 0 20px;
-}
-.community .right-col{
-    width: 75%;
-}
-.community .slide img:last-child{
-    float: right;
-}
-.community .slide img:only-child{
-    float: left;
-}
-/*===== Subscribe Section =====*/
-.subscribe{
-    padding-top: 322px;
-    text-align: center;
-    padding-bottom: 322px;
-    background: url("../images/subscribe-bg.jpg") no-repeat center / cover;   
-}
-.subscribe h2{
+
+/*Start Header */
+
+.header{
+    background-image: url(../images/header-bg.jpg);
+    background-size: cover;
     color: #fff;
-    font-size: 1.8em;
-    letter-spacing: 1px;
-    margin-bottom: 35px;
-    text-transform: uppercase;
+    height: 750px
 }
-.subscribe input[type="email"]{
-    border:none;
-    width: 280px;
-    height: 62px;
-    font-size: 17px;
-    padding: 0 20px;
-    text-transform: uppercase;
-    border-radius: 5px 0 0 5px;
+
+.header .navbar{
+    text-align: center;
+    margin-bottom: 150px
 }
-.subscribe button{
+
+.header .navbar ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0
+}
+
+.header .navbar ul li{
+    display: inline-block;
+    padding: 20px 40px
+}
+
+.header .navbar ul li a{
+    text-decoration: none;
     color: #fff;
-    width: 64px;
-    height: 62px;
-    margin: -4px;
-    border: none;
-    cursor: pointer;
-    background-color: #16a085;
-    border-radius: 0 5px 5px 0;
-}
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    font-size: 20px
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.header .slider{text-align: center}
+
+.header .slider h1{
+    font-size: 64px;
+    word-spacing: 3px
 }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.header .slider p{
+    font-size: 30px;
+    word-spacing: 10px
 }
 
+.header .slider .icon{margin-top: 130px}
 
+.header .slider .icon i{margin: 7px}
 
+/*End Header*/
 
+/*Start Content*/
+
+.content{
+    background-color: #F5F6F8;
+    padding-top: 30px
+}
+
+/*End End Content*/
+
+/*Start Content-2*/
+
+.content-2 .info small{margin: 25px 0 5px 15px;font-weight: bold}
+
+.content-2 .info i{margin-left: 15px}
+
+/*End Content-2*/
+
+/*Grouping*/
+
+.content,
+.content-2{overflow: hidden}
+
+.content .info,
+.content-2 .info{
+    float: left;
+    width: 40%
+}
+
+.content .info h2,
+.content-2 .info h2{
+    text-transform: uppercase;
+    word-spacing: 4px;
+    color: #14A085;
+    margin: 0
+}
+
+.content .info p,
+.content-2 .info p{
+    line-height: 1.6;
+    color: #666;
+    margin: 45px 0 35px 0
+}
+
+.content .info button a,
+.content-2 .info button a,
+.header .slider button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.5px
+}
+
+.content-2 .info small,
+.content-2 .info img{display: block}
+
+.content .image,
+.content-2 .image{
+    float: left;
+    width: 60%
+}
+
+.content .image img,
+.content-2 .image img{max-width: 100%}
+
+.content .info h2,
+.content-2 .info h2,
+.content-2 .image img{padding-top: 80px}
